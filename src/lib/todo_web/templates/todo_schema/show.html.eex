@@ -1,0 +1,23 @@
+<h1>Show Todo schema</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @todo_schema.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @todo_schema.description %>
+  </li>
+
+  <li>
+    <strong>Completed:</strong>
+    <%= @todo_schema.completed %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.todo_schema_path(@conn, :edit, @todo_schema) %></span>
+<span><%= link "Back", to: Routes.todo_schema_path(@conn, :index) %></span>
